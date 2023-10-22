@@ -181,6 +181,7 @@ nav li {
     grid-column: auto;
     grid-row: auto;
     max-height: 600px;
+    overflow: auto;
 }
 
 .container-travel {
@@ -219,6 +220,7 @@ nav li {
     grid-column: auto;
     grid-row: auto;
     max-height: 300px;
+    overflow: auto;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
