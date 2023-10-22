@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f1ca;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 2;
+    padding: 60px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+
+h2,h3 {
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(75, 110, 15);
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+img, video{ 
+    border: 5px solid rgb(221, 146, 49);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+ul {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: antiquewhite;
+    top: 0;
+    width: 100%;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    display: block;
+    color:rgb(75, 110, 15);
+    text-align: center;
+    padding: 15px 18px;
+}
+
+nav a:hover, nav a:focus, nav a.active{
+    background-color: rgb(120, 74, 14);
+    color: white;
+    font-weight: bold;
+    text-decoration: underline white wavy;
+}
+
+nav li {
+    border-right: 1px solid rgb(221, 146, 49);
+}
+
+.skip{
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus {
+    position: absolute;
+    top: 20px;
+}
+
+:focus {
+    border: 2px solid #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border: palevioletred dotted 5px;
+    border-radius: 30px;
+}
+
+.rocket {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    background-color: rgba(216, 112, 147, 0.284);
+    border-top-left-radius: 30px;
+}
+
+.smoothie{
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.santa {
+    grid-column: 1/ span 1;
+    grid-row: 2;
+}
+
+.juno{
+    grid-column: 2/ span 1;
+    grid-row: 2;
+    background-color: rgba(216, 112, 147, 0.284);
+}
+
+.pluto{
+    grid-column: 1/ span 1;
+    grid-row: 3;
+    background-color: rgba(216, 112, 147, 0.284);
+    border-bottom-left-radius: 30px;
+}
+
+.text-block{
+    background-color: #f9f6dea3;
+    border:2px dashed rgb(221, 146, 49);
+    margin: 50px;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.text-block-left{
+    background-color: #f9f6dea3;
+    padding: 30px;
+    border-top-left-radius: 30px;
+}
+
+.text-block-like{
+    background-color: #f9f6dea3;
+    border-bottom:2px solid rgb(221, 146, 49);
+    padding: 30px;
+}
+
+.text-block-right{
+    background-color: #f9f6dea3;
+    border-bottom:2px solid rgb(221, 146, 49);
+    padding: 30px;
+    border-top-right-radius: 30px;
+}
+
+.text-block-left-bottom{
+    background-color: #f9f6dea3;
+    padding: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.rocket-image, .smoothie-image, .santa-image, .juno-image, .pluto-image {
+    grid-column: auto;
+    grid-row: auto;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.container-travel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 10fr));
+    row-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border: palevioletred dotted 5px;
+    border-radius: 30px;
+}
+
+.LA {
+    grid-column: 1/ span 1;
+    grid-row: 1;
+    background-color: rgba(138, 212, 109, 0.284);
+    border-top-left-radius: 30px;
+}
+
+.hawaii{
+    grid-column: 2/ span 1;
+    grid-row: 1;
+}
+
+.monte {
+    grid-column: 1/ span 1;
+    grid-row: 2;
+}
+
+.nashville{
+    grid-column: 2/ span 1;
+    grid-row: 2;
+    background-color: rgba(138, 212, 109, 0.284);
+    border-bottom-right-radius: 30px;
+}
+
+.LA-image, .hawaii-image, .monte-image, .nashville-image {
+    grid-column: auto;
+    grid-row: auto;
+    max-height: 300px;
+    overflow: auto;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .gif {
+        display: none; /* Hide GIFs for reduced motion users */
+        
+        html{
+            scroll-behavior: auto; /* Removes scroll animation */
+        }
+      
+        .skip a{
+          -webkit-transition: none; /* sets to default setting */
+          transition: none;        /* sets to default setting */
+         }
+      
+        /*Turn off parallax*/
+        header{
+          background-attachment: initial;
+        }
+    }
+}
