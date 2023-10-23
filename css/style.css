@@ -40,7 +40,6 @@ p {
 }
 
 img, video{ 
-    padding: 5px;
     border-radius: 30px;
     justify-items: center;
     overflow: scroll;
